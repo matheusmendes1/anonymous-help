@@ -6,6 +6,16 @@ Bem vindo ao Anonymous Help! Este é, a primeiro momento, o protótipo do trabal
 
 Colocando a mão na massa, assim que você clonar o repositório, alguns pré-requisitos devem constar no seu ambiente de desenvolvimento. Vamos listá-los abaixo. Lembre-se que com todos eles instalados, você deverá rodar o comando "yarn" no terminal apontando para o diretório da aplicação para rodar as dependências e rodar "yarn typeorm migration:run" para que as migrations sejam criadas e assim, as tabelas sejam criadas no seu banco de dados.
 
+## Main Technologies
+
+* Javascript
+* HTML
+* CSS
+* Typescript
+* NodeJS
+* PostgresSQL
+* ReactJS
+
 ### Prerequisites
 
 Aqui estão os softwares necessários e recomendados para prosseguir com o uso da aplicação:
@@ -63,6 +73,11 @@ Aqui estão os softwares necessários e recomendados para prosseguir com o uso d
 * BCRYPTJS
 
 * Usado para criptografia das senhas quando for salvar dados no banco
+
+* JSONWEBTOKEN
+
+* Usado para manipular os JWT tokens (Autenticação)
+** Obs: o token (o valor em si) é separado em 3 partes, você pode observar mais em [JWT io](https://jwt.io/)
 
 ### Rodapé
 

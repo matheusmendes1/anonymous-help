@@ -15,6 +15,9 @@ class User {
   name: string;
 
   @Column()
+  avatar_name: string;
+
+  @Column()
   email: string;
 
   @Column()
