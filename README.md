@@ -68,3 +68,4 @@ Aqui estão os softwares necessários e recomendados para prosseguir com o uso d
 
 * Misturei inglês com português mas you are bilingual so you will entender :D
 * Projeto, até então, puramente acadêmico.
+* Toda e qualquer biblioteca e/ou tecnologia tem sua documentação, LEIA ELA QUANDO TIVER DÚVIDA
