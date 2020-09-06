@@ -77,7 +77,7 @@ Aqui estão os softwares necessários e recomendados para prosseguir com o uso d
 * JSONWEBTOKEN
 
 * Usado para manipular os JWT tokens (Autenticação)
-** Obs: o token (o valor em si) é separado em 3 partes, você pode observar mais em [JWT io](https://jwt.io/)
+* Obs: o token (o valor em si) é separado em 3 partes, você pode observar mais em [JWT io](https://jwt.io/)
 
 * MULTER
 
