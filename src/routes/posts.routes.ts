@@ -18,22 +18,18 @@ postsRouter.get('/', async (request, response) => {
 });
 
 postsRouter.post('/', async (request, response) => {
-  try {
-    const { content, likes } = request.body;
-    const owner_id = request.user.id;
+  const { content, likes } = request.body;
+  const owner_id = request.user.id;
 
-    const createPost = new CreatePostService();
+  const createPost = new CreatePostService();
 
-    const post = await createPost.execute({
-      owner_id,
-      content,
-      likes,
-    });
+  const post = await createPost.execute({
+    owner_id,
+    content,
+    likes,
+  });
 
-    return response.json(post);
-  } catch (err) {
-    return response.status(400).json({ error: err.message });
-  }
+  return response.json(post);
 });
 
 export default postsRouter;
