@@ -79,6 +79,19 @@ Aqui estão os softwares necessários e recomendados para prosseguir com o uso d
 
 ## Considerations about Frontend with ReactJS
 
+* Styled Components
+  * Estamos usando o styled components como pré-processador de css para facilitar no desenvolvimento, possibilitando o reuso e separação de css nos diferentes componentes
+
+* React Icons
+  * Usamos os ícones disponibilizados pelo próprio react
+
+* Unform
+  * Biblioteca do pessoal da Rocketseat, para tratativa de formulários
+
+* Yup
+  * Serve para fazer verificações de campos no formulário
+
+
 ## Rodapé
 
 * Misturei inglês com português mas you are bilingual so you will entender :D
