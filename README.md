@@ -63,25 +63,20 @@ Aqui estão os softwares necessários e recomendados para prosseguir com o uso d
   * Add additional request processing "middleware" at any point within the request handling pipeline.
 
 * TypeORM
-
-* Usado com o conceito de migrations, ele serve, no projeto, para criar as tabelas, manipular os models e outras funcionalidades pertinentes ao banco de dados.
+  * Usado com o conceito de migrations, ele serve, no projeto, para criar as tabelas, manipular os models e outras funcionalidades pertinentes ao banco de dados.
 
 * UUIDV4
-
-* Usado para prover id's válidos e tem algumas funções para manipular eles
+  * Usado para prover id's válidos e tem algumas funções para manipular eles
 
 * BCRYPTJS
-
-* Usado para criptografia das senhas quando for salvar dados no banco
+  * Usado para criptografia das senhas quando for salvar dados no banco
 
 * JSONWEBTOKEN
-
-* Usado para manipular os JWT tokens (Autenticação)
-* Obs: o token (o valor em si) é separado em 3 partes, você pode observar mais em [JWT io](https://jwt.io/)
+  * Usado para manipular os JWT tokens (Autenticação)
+  * Obs: o token (o valor em si) é separado em 3 partes, você pode observar mais em [JWT io](https://jwt.io/)
 
 * MULTER
-
-* Usado para tratar upload de arquivos
+  * Usado para tratar upload de arquivos
 
 ### Rodapé
 
