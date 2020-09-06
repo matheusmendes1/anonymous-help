@@ -11,7 +11,7 @@ import logoImg from '../../assets/logo.svg';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
-import { Container, Content, Background } from './styles';
+import { Container, Content, Background, AnimationContainer } from './styles';
 import getValidationErrors from '../../utils/getValidationErrors';
 
 const SignIn: React.FC = () => {
@@ -45,6 +45,7 @@ const SignIn: React.FC = () => {
   return (
     <Container>
       <Content>
+        <AnimationContainer>
         <img src={logoImg} alt="Anonymous Help" />
 
         <h1>Anonymous Help</h1>
@@ -70,6 +71,7 @@ const SignIn: React.FC = () => {
           <FiLogIn />
           Criar conta
         </a>
+        </AnimationContainer>
       </Content>
       <Background />
     </Container>

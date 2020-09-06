@@ -9,7 +9,7 @@ import logoImg from '../../assets/logo.svg';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
-import { Container, Content, Background } from './styles';
+import { Container, Content, Background, AnimationContainer } from './styles';
 import getValidationErrors from '../../utils/getValidationErrors';
 
 const SignUp: React.FC = () => {
@@ -49,6 +49,7 @@ const SignUp: React.FC = () => {
       <Background />
 
       <Content>
+        <AnimationContainer>
         <img src={logoImg} alt="Anonymous Help" />
 
         <h1>Anonymous Help</h1>
@@ -73,6 +74,7 @@ const SignUp: React.FC = () => {
           <FiArrowLeft />
           Voltar para logon
         </a>
+        </AnimationContainer>
       </Content>
     </Container>
   );
