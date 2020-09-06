@@ -50,9 +50,7 @@ Aqui estão os softwares necessários e recomendados para prosseguir com o uso d
   * Na aba PostgreSQL: check 'show all databases'
 * Create a new database to this connection
 
-## Considerations about the project
-
-## Backend with NodeJS
+## Considerations about Backend with NodeJS
 #### Dentre as bibliotecas usadas no projeto, podemos listar
 
 * Express
@@ -79,7 +77,7 @@ Aqui estão os softwares necessários e recomendados para prosseguir com o uso d
 * MULTER
   * Usado para tratar upload de arquivos
 
-## Frontend with ReactJS
+## Considerations about Frontend with ReactJS
 
 ### Rodapé
 
