@@ -79,7 +79,7 @@ Aqui estão os softwares necessários e recomendados para prosseguir com o uso d
 
 ## Considerations about Frontend with ReactJS
 
-### Rodapé
+## Rodapé
 
 * Misturei inglês com português mas you are bilingual so you will entender :D
 * Projeto, até então, puramente acadêmico.
