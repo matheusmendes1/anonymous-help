@@ -45,7 +45,7 @@ Aqui estão os softwares necessários e recomendados para prosseguir com o uso d
   * Host: localhost
   * Port: 5432 (same as the container)
   * Database: postgres (defaul name)
-  * Username: same as the container
+  * Username: postgres
   * Senha: same as the container
   * Na aba PostgreSQL: check 'show all databases'
 * Create a new database to this connection
