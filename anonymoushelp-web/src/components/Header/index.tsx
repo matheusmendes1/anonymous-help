@@ -1,29 +1,40 @@
 import React from 'react';
 
-import { FiHome, FiBell, FiInbox } from 'react-icons/fi';
+import { FiHome, FiBell, FiPower } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import { Container, Content } from './styles';
+
+import { useAuth } from '../../hooks/auth';
 
 import logoImg from '../../assets/logo.svg';
 
-import avatarImg from '../../assets/avatar.png';
+// import avatarImg from '../../assets/avatar.png';
 
 const Header: React.FC = () => {
+  const { signOut, user } = useAuth();
+
   return (
     <Container>
       <Content>
         <nav>
           <ul>
             <li>
-              <FiHome color="#FFF" size={20} />
-              <span>Home</span>
+              <Link to="/timeline">
+                <FiHome color="#FFF" size={20} />
+                <span>Home</span>
+              </Link>
             </li>
             <li>
-              <FiBell color="#FFF" size={20} />
-              <span>Notificações</span>
+              <Link to="/timeline">
+                <FiBell color="#FFF" size={20} />
+                <span>Notificações</span>
+              </Link>
             </li>
             <li>
-              <FiInbox color="#FFF" size={20} />
-              <span>Mensagens</span>
+              <button type="button" onClick={signOut}>
+                <FiPower color="#FFF" size={20} />
+                <span>Sair</span>
+              </button>
             </li>
           </ul>
         </nav>
@@ -32,7 +43,11 @@ const Header: React.FC = () => {
 
         <div>
           <input type="text" placeholder="Pesquise" />
-          <img src={avatarImg} alt="User Avatar" />
+
+          <Link to="/profile">
+            <img src={user.avatar} alt="User Avatar" />
+          </Link>
+
           <button type="button">Conte algo</button>
         </div>
       </Content>

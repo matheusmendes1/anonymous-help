@@ -29,11 +29,14 @@ export const Content = styled.div`
   nav {
     ul {
       display: flex;
+      align-items: center;
+      justify-content: center;
       list-style: none;
 
       li {
         display: flex;
         align-items: center;
+        justify-content: center;
 
         margin-left: 30px;
 
@@ -41,17 +44,42 @@ export const Content = styled.div`
           margin: 0;
         }
 
-        span {
+        button {
           margin-left: 7px;
+
           font-size: 16px;
           color: #fff;
           font-weight: 600;
           letter-spacing: 1px;
           transition: color 0.3s;
+          background: transparent;
+          border: 0;
 
           &:hover {
-            color: ${shade(0.3, '#FFF')};
+            color: ${shade(0.1, '#FFF')};
             cursor: pointer;
+          }
+
+          span {
+            margin-left: 5px;
+          }
+        }
+
+        a {
+          text-decoration: none;
+
+          span {
+            margin-left: 7px;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+
+            &:hover {
+              color: ${shade(0.1, '#FFF')};
+              cursor: pointer;
+            }
           }
         }
       }
@@ -60,6 +88,7 @@ export const Content = styled.div`
 
   img {
     width: 50px;
+    cursor: pointer;
   }
 
   div {
@@ -72,6 +101,10 @@ export const Content = styled.div`
       width: 50px;
       border-radius: 50%;
       margin: 0 15px;
+
+      &:hover {
+        opacity: 0.6;
+      }
     }
 
     button {
@@ -92,7 +125,7 @@ export const Content = styled.div`
       transition: background-color 0.3s;
 
       &:hover {
-        background: ${shade(0.3, '#aab0e9')};
+        background: ${shade(0.1, '#aab0e9')};
         color: #fff;
       }
     }
