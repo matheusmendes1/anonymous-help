@@ -72,9 +72,11 @@ export const AnimationContainer = styled.div`
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
     svg {
-      margin-right: 16px;
+      margin-left: 16px;
+      margin-top: 2px;
     }
 
     &:hover {

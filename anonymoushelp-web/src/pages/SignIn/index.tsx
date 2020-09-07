@@ -1,7 +1,9 @@
 import React, { useCallback, useRef } from 'react';
-import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
+import { FiArrowRightCircle, FiMail, FiLock } from 'react-icons/fi';
 
 import { Form } from '@unform/web';
+
+import { Link, useHistory } from 'react-router-dom';
 
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
@@ -28,6 +30,8 @@ const SignIn: React.FC = () => {
   const { signIn } = useAuth();
   const { addToast } = useToast();
 
+  const history = useHistory();
+
   // eslint-disable-next-line @typescript-eslint/ban-types
   const handleSubmit = useCallback(
     async (data: SignInFormData) => {
@@ -49,6 +53,8 @@ const SignIn: React.FC = () => {
           email: data.email,
           password: data.password,
         });
+
+        history.push('/timeline');
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
           const errors = getValidationErrors(err);
@@ -63,7 +69,7 @@ const SignIn: React.FC = () => {
         });
       }
     },
-    [signIn, addToast],
+    [signIn, history, addToast],
   );
 
   return (
@@ -91,10 +97,10 @@ const SignIn: React.FC = () => {
             <a href="forgot">Esqueci minha senha</a>
           </Form>
 
-          <a href="#criar">
-            <FiLogIn />
+          <Link to="/signup">
             Criar conta
-          </a>
+            <FiArrowRightCircle />
+          </Link>
         </AnimationContainer>
       </Content>
       <Background />
