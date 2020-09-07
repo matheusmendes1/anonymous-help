@@ -15,6 +15,7 @@ const appearFromLeft = keyframes`
 
 export const Container = styled.div`
   height: 100vh;
+  background: #b5c7ee;
 
   display: flex;
   align-items: stretch;
@@ -69,7 +70,7 @@ export const AnimationContainer = styled.div`
   }
 
   > a {
-    color: #a087d2;
+    color: #fff;
     display: block;
     text-decoration: none;
     transition: color 0.3s;
@@ -85,7 +86,7 @@ export const AnimationContainer = styled.div`
     }
 
     &:hover {
-      color: ${shade(0.3, '#a087d2')};
+      color: ${shade(0.3, '#FFF')};
     }
   }
 `;
