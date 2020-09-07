@@ -41,6 +41,10 @@ export const AnimationContainer = styled.div`
     width: 150px;
   }
 
+  h1 {
+    color: #fff;
+  }
+
   form {
     margin: 50px 0 80px 0;
     width: 340px;
@@ -48,6 +52,7 @@ export const AnimationContainer = styled.div`
 
     h1 {
       margin-bottom: 24px;
+      color: #fff;
     }
 
     > a {

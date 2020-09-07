@@ -15,7 +15,7 @@ export const Container = styled.div<ContainerProps>`
   border: 2px solid #fff;
   padding: 16px;
   width: 100%;
-  color: #191919;
+  color: #aab0e9;
   display: flex;
   align-items: center;
 
@@ -48,7 +48,7 @@ export const Container = styled.div<ContainerProps>`
     border: 0;
 
     &::placeholder {
-      color: #191919;
+      color: #aab0e9;
     }
   }
 
