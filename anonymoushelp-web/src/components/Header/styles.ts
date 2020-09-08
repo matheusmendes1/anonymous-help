@@ -41,7 +41,7 @@ export const Content = styled.div`
 
         margin-left: 30px;
 
-        &:first-child {
+        &::first-child {
           margin: 0;
         }
 

@@ -95,7 +95,7 @@ export const AvatarInput = styled.div`
     position: absolute;
     width: 48px;
     height: 48px;
-    background: #b5c7ee;
+    background: #aab0e9;
     border-radius: 50%;
     right: 0;
     bottom: 0;
@@ -118,7 +118,7 @@ export const AvatarInput = styled.div`
     }
 
     &:hover {
-      background: ${shade(0.3, '#B5C7EE')};
+      background: ${shade(0.3, '#AAB0E9')};
     }
   }
 `;
