@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { Container, Content } from './styles';
+import { Container } from './styles';
 import Header from '../../components/Header';
+import Bar from '../../components/Bar';
 
 const Timeline: React.FC = () => {
   return (
     <Container>
       <Header />
-
-      <Content />
+      <Bar />
     </Container>
   );
 };

@@ -155,7 +155,8 @@ const Profile: React.FC = () => {
           >
             <AvatarInput>
               <img
-                src="http://localhost:3333/files/cd848eadc52d8a7131c7-avatar.jpg"
+                // Gambiarra
+                src={`http://localhost:3333/files/${user.avatar}`}
                 alt={user.name}
               />
               <label htmlFor="avatar">
