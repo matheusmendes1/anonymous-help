@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 import { FaRegHeart, FaRegComment } from 'react-icons/fa';
 import { Container } from './styles';
 
-import avatarImg from '../../assets/avatar.png';
+import defaultAvatar from '../../assets/defaultAvatar.svg';
+
 import { useAuth } from '../../hooks/auth';
 import api from '../../services/api';
 
@@ -50,11 +51,19 @@ const TimelineContent: React.FC = () => {
         <ul className="tweets">
           {posts.map(post => (
             <li key={post.id}>
-              <img src={avatarImg} alt="Avatar" />
+              <img
+                // Gambiarra
+                src={
+                  user.avatar
+                    ? `http://localhost:3333/files/${user.avatar}`
+                    : defaultAvatar
+                }
+                alt={user.name}
+              />
 
               <div className="info">
                 <strong>
-                  <span>@Exibit</span>
+                  <span>{`@${user.avatar_name}`}</span>
                 </strong>
                 <p>{post.content}</p>
 

@@ -22,7 +22,7 @@ const ProfileContent: React.FC = () => {
         alt={user.name}
       />
 
-      <h1>@misterjohndoe</h1>
+      <h1>{`@${user.avatar_name}`}</h1>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec eu nisl
