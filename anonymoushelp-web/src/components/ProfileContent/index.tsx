@@ -5,12 +5,22 @@ import { Container } from './styles';
 
 import { useAuth } from '../../hooks/auth';
 
+import defaultAvatar from '../../assets/defaultAvatar.svg';
+
 const ProfileContent: React.FC = () => {
   const { user } = useAuth();
 
   return (
     <Container>
-      <img src={`http://localhost:3333/files/${user.avatar}`} alt={user.name} />
+      <img
+        // Gambiarra
+        src={
+          user.avatar
+            ? `http://localhost:3333/files/${user.avatar}`
+            : defaultAvatar
+        }
+        alt={user.name}
+      />
 
       <h1>@misterjohndoe</h1>
 
@@ -23,17 +33,17 @@ const ProfileContent: React.FC = () => {
       <ul>
         <li>
           <GoLocation size={20} />
-          Namur, Belgium
+          Curitiba, Brasil
         </li>
 
         <li>
           <GoLink size={20} />
-          exibit.be
+          tumblr.bl
         </li>
 
         <li>
           <GoClock size={20} />
-          Joined June 2007
+          Entrou em 2019
         </li>
       </ul>
 

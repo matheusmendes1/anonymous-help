@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Content } from './styles';
+import { Container, Content, Banner, Layer } from './styles';
 
 import Header from '../../components/Header';
 import Bar from '../../components/Bar';
@@ -13,6 +13,13 @@ const Timeline: React.FC = () => {
   return (
     <Container>
       <Header />
+
+      <Banner>
+        <Layer>
+          <h1>Nós todos. Juntos.</h1>
+        </Layer>
+      </Banner>
+
       <Bar />
 
       <Content>

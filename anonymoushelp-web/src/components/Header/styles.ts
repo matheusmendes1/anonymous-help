@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 
 import searchImg from '../../assets/search.svg';
-import bannerImg from '../../assets/banner.jpg';
 
 export const Container = styled.div`
   height: 65px;
@@ -108,9 +107,10 @@ export const Content = styled.div`
       }
     }
 
-    button {
+    .buttonLink {
       height: 34px;
       background: #e4e6eb;
+      text-decoration: none;
 
       display: flex;
       align-items: center;
@@ -149,22 +149,4 @@ export const Content = styled.div`
       }
     }
   }
-`;
-
-export const Banner = styled.div`
-  height: 340px;
-  width: 100%;
-  background: url(${bannerImg}) no-repeat center;
-
-  color: #f0f2f5;
-`;
-
-export const Layer = styled.div`
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;

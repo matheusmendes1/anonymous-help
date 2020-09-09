@@ -8,6 +8,7 @@ import SignUp from '../pages/SignUp';
 
 import Timeline from '../pages/Timeline';
 import Profile from '../pages/Profile';
+import Share from '../pages/Share';
 
 const Routes: React.FC = () => (
   <Switch>
@@ -16,6 +17,7 @@ const Routes: React.FC = () => (
 
     <Route path="/timeline" component={Timeline} isPrivate />
     <Route path="/profile" component={Profile} isPrivate />
+    <Route path="/share" component={Share} isPrivate />
   </Switch>
 );
 

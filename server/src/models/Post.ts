@@ -26,7 +26,10 @@ class Post {
   owner: User;
 
   @Column()
-  likes: number;
+  number_likes: number;
+
+  @Column()
+  number_comments: number;
 
   @CreateDateColumn()
   created_at: Date;

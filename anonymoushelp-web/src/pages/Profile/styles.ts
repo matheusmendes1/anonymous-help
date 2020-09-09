@@ -74,6 +74,12 @@ export const Content = styled.div`
       }
     }
 
+    input {
+      &::placeholder {
+        color: #aab0e9;
+      }
+    }
+
     input[name='old_password'] {
       margin-top: 24px;
     }

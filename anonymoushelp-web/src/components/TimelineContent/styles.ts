@@ -6,6 +6,14 @@ export const Container = styled.div`
   background: #fff;
   margin: 10px 20px 0;
 
+  .noPosts {
+    margin-top: 50px;
+    text-align: center;
+    color: #aab0e9;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
   nav {
     border-bottom: 1px solid #e6ecf0;
     padding: 10px 15px;

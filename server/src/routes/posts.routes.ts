@@ -12,13 +12,15 @@ postsRouter.use(ensureAuthenticated);
 
 postsRouter.get('/', async (request, response) => {
   const postsRepository = getRepository(Post);
-  const posts = await postsRepository.find();
+  const user_id = request.user.id;
+
+  const posts = await postsRepository.find({ where: { owner_id: user_id } });
 
   return response.json(posts);
 });
 
 postsRouter.post('/', async (request, response) => {
-  const { content, likes } = request.body;
+  const { content, number_likes, number_comments } = request.body;
   const owner_id = request.user.id;
 
   const createPost = new CreatePostService();
@@ -26,7 +28,8 @@ postsRouter.post('/', async (request, response) => {
   const post = await createPost.execute({
     owner_id,
     content,
-    likes,
+    number_likes,
+    number_comments,
   });
 
   return response.json(post);

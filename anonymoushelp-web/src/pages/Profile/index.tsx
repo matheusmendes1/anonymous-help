@@ -19,6 +19,8 @@ import { useToast } from '../../hooks/toast';
 
 import getValidationErrors from '../../utils/getValidationErrors';
 
+import defaultAvatar from '../../assets/defaultAvatar.svg';
+
 import { Container, Content, AvatarInput, Layer } from './styles';
 
 import Button from '../../components/Button';
@@ -156,7 +158,11 @@ const Profile: React.FC = () => {
             <AvatarInput>
               <img
                 // Gambiarra
-                src={`http://localhost:3333/files/${user.avatar}`}
+                src={
+                  user.avatar
+                    ? `http://localhost:3333/files/${user.avatar}`
+                    : defaultAvatar
+                }
                 alt={user.name}
               />
               <label htmlFor="avatar">
@@ -165,9 +171,9 @@ const Profile: React.FC = () => {
               </label>
             </AvatarInput>
 
-            <h1>My profile</h1>
+            <h1>Meu perfil</h1>
 
-            <Input name="name" icon={FiUser} placeholder="Name" />
+            <Input name="name" icon={FiUser} placeholder="Nome" />
             <Input name="email" icon={FiMail} placeholder="E-mail" />
 
             <Input
@@ -175,24 +181,24 @@ const Profile: React.FC = () => {
               name="old_password"
               icon={FiLock}
               type="password"
-              placeholder="Actual password"
+              placeholder="Senha atual"
             />
 
             <Input
               name="password"
               icon={FiLock}
               type="password"
-              placeholder="New password"
+              placeholder="Nova senha"
             />
 
             <Input
               name="password_confirmation"
               icon={FiLock}
               type="password"
-              placeholder="Confirm password"
+              placeholder="Confirmar senha"
             />
 
-            <Button type="submit">Confirm changes</Button>
+            <Button type="submit">Confirmar mudanças</Button>
           </Form>
         </Content>
       </Layer>
